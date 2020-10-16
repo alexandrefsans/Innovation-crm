@@ -1,0 +1,14 @@
+@mixin primary-title($color){
+	font-family: 'Montserrat';
+    padding: 30px 0;
+	font-size: 28px;
+	font-weight: 600;
+	color: $color;
+}
+
+
+@mixin resume-box($color){
+	color: $color;
+	border-top: 5px solid $color;
+	background-color: #fff;
+}

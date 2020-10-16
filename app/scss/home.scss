@@ -1,0 +1,372 @@
+.innovation-crm {
+	font-family: 'Montserrat';
+
+	.grid {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__header {
+	    border: 2px #edf0f0 solid;
+        height: 83px;
+	    display: flex;
+	    align-items: center;
+	    padding-top: 19px;
+	    position: relative;
+
+		&__primary {
+			display: flex;
+
+			&__link {
+			    padding: 0 0 15px 0;
+			    
+				&__img {
+					height: 70px;
+				}
+			}
+
+			&__nav {
+			    display: flex;
+	    		align-items: center;
+
+				&__list {
+					height: 100%;
+				    display: flex;
+				    align-items: center;
+
+					&__item {
+						padding: 0 10px;
+						list-style: none;
+					    height: 100%;
+	    				display: flex;
+					    border-left: 1px #edf0f0 solid;
+
+					    &:last-child {
+					    	border-right: 1px #edf0f0 solid;
+					    }
+
+						&__link {
+							text-decoration: none;
+							color: #465678;
+							font-weight: 500;
+							display: flex;
+							align-items: center;
+
+							.icon {
+							    display: inline-flex;
+	    						align-items: center;
+							    margin-left: 5px;
+							}
+						}
+
+						&__sub-nivel {
+						    position: absolute;
+					        border-bottom: 1px #919aae solid;
+						    bottom: -62px;
+						    left: 0;
+						    width: 100%;
+						    height: 60px;
+    						background-color: #fff;
+    						display: flex;
+    						align-items: center;
+					        margin: 0;
+							padding: 0;
+
+							.grid {
+								display: flex;
+    							justify-content: end;
+							}
+
+						    &__item {
+    							list-style: none;
+    							padding-right: 40px;
+
+						    	&__link {
+    								text-decoration: none;
+    								color: #919aae;
+								    font-size: 14px;
+							        display: flex;
+
+    								.icon {
+    									margin-right: 5px;
+
+    									&.icon-gift {
+    										height: 30px;
+    									}
+    								}
+						    	}
+						    }
+						}
+					}
+				}
+			}
+		}
+
+		&__secondary {
+			display: flex;
+    		align-items: center;
+	        border-left: 1px #edf0f0 solid;
+
+			&__notifications {
+			    display: flex;
+			    border-left: 1px #edf0f0 solid;
+
+			    .icon {
+			    	margin: 0 10px;
+			    }
+
+				.icon-post-mail {
+			        width: 39px;
+    				height: 30px;
+    				cursor: pointer;
+				}
+
+				.icon-phone {
+			        width: 30px;
+    				height: 30px;
+    				cursor: pointer;
+				}
+			}
+
+			&__user {
+			    display: flex;
+    			align-items: center;
+    			padding: 0 20px;
+
+				&__thumb {
+					&__img {
+						height: 60px;
+						-webkit-border-radius: 100px;
+						-moz-border-radius: 100px;
+						border-radius: 100px;
+					    border: 1px #edf0f0 solid;
+    					padding: 5px;
+					}
+				}
+
+				&__information {
+					padding-left: 10px;
+
+					&__name {
+						font-family: 'Poppins';
+					    font-weight: 300;
+					    color: #454441;
+					    font-size: 16px;
+					    cursor: pointer;
+					}
+
+					&__date {
+					    font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+
+	&__container {
+	    position: relative;
+		top: 60px;
+		background-color: #f9fbfb;
+		// padding-top: 30px;
+
+		&__information {
+
+			&__content {
+			    display: flex;
+
+			    &__resume {
+		    	    width: 60%;
+
+			    	&__title {
+			    		@include primary-title(#d68500);
+			    	}
+
+			    	&__box {
+		    		    display: flex;
+    					flex-flow: row wrap;
+
+			    		&__item {
+    			            width: 190px;
+    						height: 115px;
+						    display: flex;
+						    align-items: center;
+						    justify-content: space-between;
+						    padding: 0 20px;
+					        margin: 10px 10px 10px 0;
+					        
+					        &__title {
+					        	color: #919aae;
+    							font-weight: 400;
+							    font-size: 18px;
+						        padding-right: 7px;
+					        } 
+
+					        &__number {
+					        	font-size: 45px;
+    							font-weight: 500;
+					        }
+
+    						&--orange {
+    							@include resume-box(#d68500);
+    						}
+
+    						&--blue {
+    							@include resume-box(#82a5d4);
+    						}
+
+    						&--green {
+    							@include resume-box(#99b633);
+    						}
+
+    						&--dark-orange {
+    							@include resume-box(#c9670a);
+    						}
+
+    						&--black {
+    							@include resume-box(#454441);
+    						}
+
+    						&--pink {
+    							@include resume-box(#d9958c);
+    						}
+
+    						&--purple {
+    							@include resume-box(#7564a1);
+    						}
+
+    						&--dark-pink {
+    							@include resume-box(#cf7576);
+    						}
+			    		}
+			    	}
+			    }
+
+			    &__funnel {
+			    	width: 40%;
+
+			    	&__title {
+			    		@include primary-title(#619f95);
+			    	}
+
+			    	&__box {
+			    		background-color: #fff;
+			    	}
+			    }
+			}
+
+			&__ranking {
+
+				&__title {
+		    		@include primary-title(#83bee2);
+		    	}
+
+				&__content {
+					background-color: #fff;
+					padding: 20px 60px;
+				    display: flex;
+					justify-content: space-between;
+
+					&__primary {
+						&__table {
+							thead {
+								tr {
+									td {
+										color: #99b633;
+										font-weight: 700;
+										font-size: 20px;
+									}
+								}
+							}
+
+							td {
+								width: 100px;
+								color: #919aae;
+								font-weight: 700;
+								font-size: 20px;
+								padding: 5px 17px;
+
+								&:first-child {
+									font-weight: 300;
+								}
+							}
+						}
+					}
+
+					&__secondary {
+						&__list {
+						    display: inline-flex;
+					        padding: 0;
+
+							&__item {
+								padding: 0 27px 0 0;
+								list-style: none;
+
+								&__name {
+									font-size: 21px;
+									color: #454441;
+									font-weight: 300;
+								}
+
+								&__value {
+									font-size: 25px;
+									color: #99b633;
+									font-weight: 700;
+								}
+							}
+						}
+
+						&__graph {
+							padding: 30px 0;
+
+							&__description {
+								font-size: 20px;
+								color: #919aae;
+							}
+						}
+
+						&__goal {
+						    display: flex;
+    						justify-content: space-between;
+    						align-items: center;
+
+    						&__date {
+							    font-size: 14px;
+    						}
+
+    						&__place {
+    							font-size: 22px;
+    							font-weight: 700;
+    							color: #7a797a;
+							    display: flex;
+    							align-items: center;
+
+    							.icon {
+    								margin-right: 5px;
+    							}
+    						}
+
+    						&__value {
+    							&__name {
+    								color: #676363;
+    								font-weight: 300;
+								    font-size: 25px;
+    							}
+
+    							&__price {
+    								font-size: 28px;
+    								color: #dc9810;
+    								font-weight: 500;
+    							}
+    						}
+						}
+					}
+				}
+			}
+		}
+
+
+		&__whatsapp {
+		    width: 30%;
+		}
+	}
+}

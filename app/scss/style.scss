@@ -1,0 +1,85 @@
+@import 'mixins';
+@import 'home';
+
+body {
+	border: 0;
+	margin: 0;
+}
+.grid {
+	margin: 0 auto;
+	width: 1500px;
+}
+
+h1, h2, h3, h4, h5, p {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: contain!important;
+
+    &.icon-15 {
+    	background-size: 15px auto;
+	    width: 15px;
+	    height: 15px;
+    }
+
+    &.icon-20 {
+	    background-size: 20px auto;
+	    width: 20px;
+	    height: 20px;
+    }
+
+    &.icon-25 {
+	    background-size: 25px auto;
+	    width: 25px;
+	    height: 25px;
+    }
+
+    &.icon-40 {
+	    background-size: 40px auto;
+	    width: 40px;
+	    height: 40px;
+    }
+
+    &.icon-arrow-down-gray {
+	    background-image: url('../images/arrow-down.png');
+    }
+
+    &.icon-arrow-up-gray {
+	    background-image: url('../images/arrow-up.png');
+    }
+
+    &.icon-arrow-down-green {
+	    background-image: url('../images/arrow-down-green.png');
+    }
+
+    &.icon-post-mail {
+	    background-image: url('../images/icon_postmail.png');
+    }
+
+    &.icon-phone {
+	    background-image: url('../images/icon_phone.png');
+    }
+
+    &.icon-calendar {
+	    background-image: url('../images/icon_calendar.png');
+    }
+
+    &.icon-gift {
+	    background-image: url('../images/icon_gift.png');
+    }
+
+    &.icon-confection {
+	    background-image: url('../images/icon_confection.png');
+    }
+
+    &.icon-place {
+	    background-image: url('../images/icon_place.png');
+    }
+}
