@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Innovation CRM - Vendas por Estado</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+	<link href="css/style.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link rel="stylesheet" type="text/css" href="css/datatable.min.css" media="screen">
+
+</head>
+<body>
+
+	<div class="innovation-crm">
+		<header class="innovation-crm__header">
+			<div class="grid">
+				<div class="innovation-crm__header__primary">
+					<a class="innovation-crm__header__primary__link" href="#">
+						<img class="innovation-crm__header__primary__link__img" src="images/logo.png" alt="Logo Innovation">
+					</a>
+
+					<nav class="innovation-crm__header__primary__nav">
+						<ul class="innovation-crm__header__primary__nav__list">
+							<li class="innovation-crm__header__primary__nav__list__item">
+								<a href="#" class="innovation-crm__header__primary__nav__list__item__link">
+									Vendas
+									<span class="icon icon-15 icon-arrow-up-gray"></span>
+								</a>
+								<ul class="innovation-crm__header__primary__nav__list__item__sub-nivel">
+									<div class="grid">
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-calendar"></span>
+												Consultar / cadastrar <br> cliente
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-gift"></span>
+												Novo orçamento <br>
+												BRINDE
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-gift"></span>
+												Novo orçamento <br>
+												PDV
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-confection"></span>
+												Novo orçamento <br>
+												CONFECÇÃO
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-calendar"></span>
+												Consultar <br>
+												produtos
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-calendar"></span>
+												Consultar <br>
+												orçamentos
+											</a>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="innovation-crm__header__primary__nav__list__item">
+								<a href="#" class="innovation-crm__header__primary__nav__list__item__link">
+									Financeiro
+									<span class="icon icon-15 icon-arrow-down-gray"></span>
+								</a>
+							</li>
+							<li class="innovation-crm__header__primary__nav__list__item">
+								<a href="#" class="innovation-crm__header__primary__nav__list__item__link">
+									Status do pedido
+									<span class="icon icon-15 icon-arrow-down-gray"></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="innovation-crm__header__secondary">
+					<div class="innovation-crm__header__secondary__notifications">
+						<div class="innovation-crm__header__secondary__notifications__icon icon icon-post-mail"></div>
+
+						<div class="innovation-crm__header__secondary__notifications__icon icon icon-phone"></div>
+					</div>
+
+					<div class="innovation-crm__header__secondary__user">
+						<div class="innovation-crm__header__secondary__user__thumb">
+							<img src="images/default_avatar.png" class="innovation-crm__header__secondary__user__thumb__img" />
+						</div>
+						<div class="innovation-crm__header__secondary__user__information">
+							<h5 class="innovation-crm__header__secondary__user__information__name">
+								Alexandre Felipe 
+								<span class="icon icon-15 icon-arrow-down-green"></span>
+							</h5>
+							<p class="innovation-crm__header__secondary__user__information__date">
+								Quarta, 14/10/2020
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="innovation-crm-relatorio-origem-container">			
+			<div class="innovation-crm-relatorio-origem-container__content">
+				<div class="innovation-crm-relatorio-origem-container__text">
+					<h1 class="innovation-crm-vendas-consultor-container__text__title">RELATÓRIO <strong>ORIGEM</strong></h1>
+				</div>
+
+				<div class="innovation-crm-relatorio-origem-container__content__filter">
+		
+
+					<div class="innovation-crm-relatorio-origem-container__content__filter__selector">
+						<label class="innovation-crm-relatorio-origem-container__content__filter__selector__label" for="cars">Data Início: </label>
+						<input type="text" name="data-inicio" value="01/01/2020" />
+					</div>
+
+					<div class="innovation-crm-relatorio-origem-container__content__filter__selector">
+						<label class="innovation-crm-relatorio-origem-container__content__filter__selector__label" for="cars">Data Final: </label>
+						<input type="text" name="data-final" value="01/01/2020" />
+					</div>
+
+
+					<button class="innovation-crm-relatorio-origem-container__content__filter__btn">Aplicar</button>
+				</div>
+
+				<div class="innovation-crm-relatorio-origem-container__content__tabless grid">
+					<table class="table table-bordered">
+					    <thead>
+					        <tr>
+					            <th>Vendas por Estado</th>
+					            <th>Chamados</th>
+					            <th>Pedidos</th>
+					            <th>Valor</th>
+					            <th>Ticket Médio</th>
+					            <th>Percentual de vendas</th>
+					            <th>Prospecção</th>
+					            <th>Google</th>
+					            <th>Indicação</th>
+					            <th>Instagram</th>
+					            <th>Loja contrato</th>
+					            <th>Detalhes</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					    	<tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+
+					        <tr>
+					        	<td>São Paulo</td>
+					        	<td>230</td>
+					        	<td>1</td>
+					        	<td>R$ 2.500,01</td>
+					        	<td>0,47</td>
+					        	<td>R$ 7.500,00</td>
+					        	<td>R$ 3.500,00</td>
+					        	<td>R$ 20.000,00</td>
+					        	<td>R$ 0,00</td>
+					        	<td>0</td>
+					        	<td>R$ 0,00</td>
+					        	<td>
+					        		<a href="#">
+					        			<span class="icon icon-20 icon-folder-green"></span>
+					        		</a>
+					        	</td>
+					        </tr>
+					        
+					    </tbody>
+					</table>
+					<div id="paging-first-datatable"></div>
+				</div>	
+
+				
+			</div>
+				
+		</main>
+	</div>
+	<script type="text/javascript" src="js/datatable.min.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+	<script>
+		$(function() {
+		  $('input[name="data-inicio"]').daterangepicker({
+	  	 	singleDatePicker: true,
+		   	locale: {
+		   		format: 'DD/MM/YYYY'
+		   	}
+		  });
+		});
+
+		$(function() {
+		  $('input[name="data-final"]').daterangepicker({
+		  	singleDatePicker: true,
+		   	locale: {
+		   		format: 'DD/MM/YYYY'
+		   	}
+		  });
+		});
+
+
+		var datatable = new DataTable(document.querySelector('.table'), {
+		    pageSize: 15,
+		    sort: [true, true, true, true, true, true, true, true, true, true, false],
+		    filters: [false, false, false],
+		    filterText: 'Type to filter... ',
+		    pagingDivSelector: "#paging-first-datatable"
+		});
+	</script>
+
+</body>
+</html>

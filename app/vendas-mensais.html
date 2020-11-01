@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Innovation CRM - Vendas Mensais</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+	<link href="css/style.min.css" rel="stylesheet" type="text/css">
+	
+
+</head>
+<body>
+
+	<div class="innovation-crm">
+		<header class="innovation-crm__header">
+			<div class="grid">
+				<div class="innovation-crm__header__primary">
+					<a class="innovation-crm__header__primary__link" href="#">
+						<img class="innovation-crm__header__primary__link__img" src="images/logo.png" alt="Logo Innovation">
+					</a>
+
+					<nav class="innovation-crm__header__primary__nav">
+						<ul class="innovation-crm__header__primary__nav__list">
+							<li class="innovation-crm__header__primary__nav__list__item">
+								<a href="#" class="innovation-crm__header__primary__nav__list__item__link">
+									Vendas
+									<span class="icon icon-15 icon-arrow-up-gray"></span>
+								</a>
+								<ul class="innovation-crm__header__primary__nav__list__item__sub-nivel">
+									<div class="grid">
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-calendar"></span>
+												Consultar / cadastrar <br> cliente
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-gift"></span>
+												Novo orçamento <br>
+												BRINDE
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-gift"></span>
+												Novo orçamento <br>
+												PDV
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-confection"></span>
+												Novo orçamento <br>
+												CONFECÇÃO
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-calendar"></span>
+												Consultar <br>
+												produtos
+											</a>
+										</li>
+
+										<li class="innovation-crm__header__primary__nav__list__item__sub-nivel__item">
+											<a href="#" class="innovation-crm__header__primary__nav__list__item__sub-nivel__item__link">
+												<span class="icon icon-20 icon-calendar"></span>
+												Consultar <br>
+												orçamentos
+											</a>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li class="innovation-crm__header__primary__nav__list__item">
+								<a href="#" class="innovation-crm__header__primary__nav__list__item__link">
+									Financeiro
+									<span class="icon icon-15 icon-arrow-down-gray"></span>
+								</a>
+							</li>
+							<li class="innovation-crm__header__primary__nav__list__item">
+								<a href="#" class="innovation-crm__header__primary__nav__list__item__link">
+									Status do pedido
+									<span class="icon icon-15 icon-arrow-down-gray"></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="innovation-crm__header__secondary">
+					<div class="innovation-crm__header__secondary__notifications">
+						<div class="innovation-crm__header__secondary__notifications__icon icon icon-post-mail"></div>
+
+						<div class="innovation-crm__header__secondary__notifications__icon icon icon-phone"></div>
+					</div>
+
+					<div class="innovation-crm__header__secondary__user">
+						<div class="innovation-crm__header__secondary__user__thumb">
+							<img src="images/default_avatar.png" class="innovation-crm__header__secondary__user__thumb__img" />
+						</div>
+						<div class="innovation-crm__header__secondary__user__information">
+							<h5 class="innovation-crm__header__secondary__user__information__name">
+								Alexandre Felipe 
+								<span class="icon icon-15 icon-arrow-down-green"></span>
+							</h5>
+							<p class="innovation-crm__header__secondary__user__information__date">
+								Quarta, 14/10/2020
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="innovation-crm-vendas-mensais-container">			
+			<div class="innovation-crm-vendas-mensais-container__content">
+				<div class="innovation-crm-vendas-mensais-container__text">
+					<h1 class="innovation-crm-vendas-mensais-container__text__title">VENDAS <strong>MENSAIS</strong></h1>
+				</div>
+
+				<div class="innovation-crm-vendas-mensais-container__content__filter">
+					<div class="innovation-crm-vendas-mensais-container__content__filter__selector">
+						<label class="innovation-crm-vendas-mensais-container__content__filter__selector__label" for="cars">Ano: </label>
+						<select class="innovation-crm-vendas-mensais-container__content__filter__selector__select" name="" id="">
+							<option>2020</option>
+						</select>
+					</div>
+
+					<div class="innovation-crm-vendas-mensais-container__content__filter__selector">
+						<label for="cars">Consultor: </label>
+						<select class="innovation-crm-vendas-mensais-container__content__filter__selector__select" name="" id="">
+							<option>Gilberto</option>
+						</select>
+					</div>
+
+					<button class="innovation-crm-vendas-mensais-container__content__filter__btn">Aplicar</button>
+				</div>
+
+				<div class="innovation-crm-vendas-mensais-container__content__tabless grid">
+
+					<div class="innovation-crm-vendas-mensais-container__content__tabless__column">
+						<table class="innovation-crm-vendas-mensais-container__content__tabless__column__table">
+							<thead>
+								<th>Mês</th>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Janeiro</td>
+								</tr>
+								<tr>
+									<td>Fevereiro</td>
+								</tr>
+								<tr>
+									<td>Março</td>
+								</tr>
+								<tr>
+									<td>Abril</td>
+								</tr>
+								<tr>
+									<td>Maio</td>
+								</tr>
+								<tr>
+									<td>Junho</td>
+								</tr>
+								<tr>
+									<td>Julho</td>
+								</tr>
+								<tr>
+									<td>Agosto</td>
+								</tr>
+								<tr>
+									<td>Setembro</td>
+								</tr>
+								<tr>
+									<td>Outubro</td>
+								</tr>
+								<tr>
+									<td>Novembro</td>
+								</tr>
+								<tr>
+									<td>Dezembro</td>
+								</tr>
+								<tr>
+									<td>Balanço Geral</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="innovation-crm-vendas-mensais-container__content__tabless__column">
+
+						<h5 class="innovation-crm-vendas-mensais-container__content__tabless__column__title">
+							PEDIDOS <strong>BRINDES</strong>
+						</h5>
+						<table class="innovation-crm-vendas-mensais-container__content__tabless__column__table innovation-crm-vendas-mensais-container__content__tabless__column__table--order">
+							<thead>
+								<th>Propostas</th>
+								<th>Pedidos</th>
+								<th>Valor</th>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr> 
+							</tbody>
+						</table>
+					</div>
+
+					
+					
+					<div class="innovation-crm-vendas-mensais-container__content__tabless__column">
+
+						<h5 class="innovation-crm-vendas-mensais-container__content__tabless__column__title">
+							PEDIDOS <strong>CONFECÇÃO</strong>
+						</h5>
+						<table class="innovation-crm-vendas-mensais-container__content__tabless__column__table innovation-crm-vendas-mensais-container__content__tabless__column__table--order">
+							<thead>
+								<th>Propostas</th>
+								<th>Pedidos</th>
+								<th>Valor</th>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr>
+								<tr>
+									<td>33</td>
+									<td>19</td>
+									<td>R$ 38.120,87</td>
+								</tr> 
+							</tbody>
+						</table>
+					</div>
+
+					<div class="innovation-crm-vendas-mensais-container__content__tabless__column">
+
+						<h5 class="innovation-crm-vendas-mensais-container__content__tabless__column__title">
+							<strong>DESEMPENHO</strong>
+						</h5>
+						<table class="innovation-crm-vendas-mensais-container__content__tabless__column__table innovation-crm-vendas-mensais-container__content__tabless__column__table--order">
+							<thead>
+								<th>Ativo</th>
+								<th>Receptivo</th>
+								<th>E-mail</th>
+								<th>Telefone</th>
+								<th>Telefone</th>
+								<th>Detalhes</th>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>R$ 7.500,00</td>
+									<td>R$ 3.000,00</td>
+									<td>120</td>
+									<td>32:54:00</td>
+									<td>17:00</td>
+									<td>
+										<a href="#">
+											<span class="icon icon-20 icon-folder-purple"></span>
+										</a>
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+		</main>
+	</div>
+
+	
+
+</body>
+</html>
